@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What To Cook</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="bg-almostGrey">
+    <div
+      id="display-recipe"
+      class="hidden fixed left-0 top-0 w-screen h-screen overflow-auto bg-overlay"
+      style="z-index: 1"
+    >
+      <div
+        id="recipe-content"
+        class="bg-darkPurple my-28 mx-auto p-5 w-4/6 shadow-lg text-white"
+      >
+        <span
+          id="closeBtn"
+          class="closeBtn text-gray-400 text-3xl float-right cursor-pointer focus:text-black hover:text-black"
+          >&times;</span
+        >
+        <h3 class="py-4 text-2xl text-center font-bold tracking-widest">
+          Jollof Rice
+        </h3>
+        <div class="flex justify-center pt-2">
+          <img src="sumaru.png" class="w-60" style="border-radius: 100%" />
+        </div>
+        <p class="text-base py-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A maxime
+          praesentium vitae deserunt, illum blanditiis tenetur modi unde, in
+          perferendis esse temporibus quidem, asperiores aut quaerat. Porro
+          earum minus ea.
+        </p>
+        <a
+          href=""
+          class="bg-almostGrey px-5 py-2 rounded-lg text-black mt-10 mb-2 hover:outline outline-2"
+          >Watch Video</a
+        >
+      </div>
+    </div>
+    <!--  -->
+    <header class="container mx-auto">
+      <div class="py-6">
+        <h1 class="text-3xl text-center font-bold">
+          Find Meals For Your Ingredients
+        </h1>
+        <p class="text-base pt-3 text-center">
+          <i
+            >A recipe has no soul. You must bring soul to the recipe -
+            Unknown</i
+          >
+        </p>
+      </div>
+    </header>
+    <main class="container mx-auto py-4">
+      <div id="search" class="flex justify-center px-4">
+        <input
+          id="search-text"
+          class="outline outline-2 outline-darkPurple rounded-2xl rounded-r-none px-5 w-9/12 md:w-3/6"
+          type="text"
+          placeholder="Enter Ingredient"
+        />
+        <a
+          id="search-btn"
+          class="px-4 py-2 bg-darkPurple text-white outline outline-2 outline-darkPurple rounded-r-2xl cursor-pointer hover:bg-lightPurple hover:outline-almostBlack" href="#" onclick="getRecipeList()"
+        >Search</a>
+      </div>
+      <div
+        id="display-recipe"
+        class="grid sm:grid-cols-1 justify-items-center gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-center py-12 px-4"
+      >
+        <!-- <div
+          class="shadow-md border border-almostBlack-200 bg-white rounded-md"
+        >
+          <img src="./sumaru.png" class="w-72 rounded-md rounded-b-none" />
+          <h3 class="text-2xl text-center mt-2">Jollof Rice</h3>
+          <div class="flex justify-end px-3">
+            <button
+              id="view-recipe"
+              class="bg-darkPurple px-5 py-2 rounded-lg text-white mt-10 mb-2 hover:bg-lightPurple"
+            >
+              View Recipe
+            </button>
+          </div>
+        </div> -->
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
